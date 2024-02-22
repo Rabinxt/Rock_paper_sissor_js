@@ -15,13 +15,13 @@ PossibleChoices.forEach(PossibleChoice => PossibleChoice.addEventListener('click
 
 function generateComputerChoice(){
     const randomNumber = Math.floor(Math.random() * PossibleChoices.length);
-    if(randomNumber === 1){
+    if(randomNumber === 0){
         ComputerChoice = "Rock" ;
     }
-    if(randomNumber === 2){
+    if(randomNumber === 1){
         ComputerChoice = "Sissors" ;
     }
-    if(randomNumber === 0){
+    if(randomNumber === 2){
         ComputerChoice = "Paper" ;
     }
 
