@@ -21,17 +21,19 @@ body {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 2rem;
+    padding-right: 20px;
+    margin-bottom: 1rem;
     color: #29abe2;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .result-container {
-    display: flex;
-    justify-content: space-around;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
     align-items: center;
-    flex-wrap: wrap;
     margin-bottom: 3rem;
 }
 
@@ -53,6 +55,18 @@ h1 {
     border: 2px solid #e22929;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
+}
+
+.result-item:nth-of-type(3) {
+    width: 300px ;
+    height: 18vh;
+    margin-left: 200px;
+}
+
+.result-item:nth-of-type(3) h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .buttons-container {
@@ -93,6 +107,7 @@ h1 {
 }
 
 .reset button {
+    margin-right: 60px;
     padding: 10px 20px;
     background-color: #f44336;
     color: white;
